@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM exercise 9def</title>
+</head>
+<body>
+  
+  <input class="text" onkeydown='handleEnterKey(event)'>
+
+  <button onclick="submit()
+  "
+   class="js-submit-button">Submit</button>
+
+   <p class="submit-message"></p>
+
+
+   <script>
+    function handleEnterKey(event){
+      if(event.key==='Enter'){
+        submit();
+      }
+    }
+    
+    function submit(){
+      const message = document.querySelector('.text').value;
+      document.querySelector('.submit-message').innerHTML=`Your name is ${message} `;
+
+    }
+   </script>
+</body>
+</html>
