@@ -1,3 +1,4 @@
 {
-  "livePreview.defaultPreviewPath": "/06-booleans.html"
+  "livePreview.defaultPreviewPath": "/06-booleans.html",
+  "liveServer.settings.multiRootWorkspaceName": "javascript supersimpleDev"
 }
