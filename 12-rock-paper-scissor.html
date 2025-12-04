@@ -5,35 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper scissor game</title>
 
-    <link rel="stylesheet" href="styles/12-rock-paper-scissor.css">
+    <link rel="stylesheet" href="styles/12-rock-paper-scissor.css" />
   </head>
   <body>
     <p class="title">Rock Paper Scissors</p>
 
-    <button
-      onclick="
-     playGame('rock')
-    "
-      class="move-button"
-    >
+    <button class="move-button js-rock-button">
       <img src="rock-paper-scissor emoji/rock-emoji.png" class="move-icon" />
     </button>
 
-    <button
-      onclick="
-      playGame('paper')
-      "
-      class="move-button"
-    >
+    <button class="move-button js-paper-button">
       <img src="rock-paper-scissor emoji/paper-emoji.png" class="move-icon" />
     </button>
 
-    <button
-      onclick="
-  playGame('scissors')
-  "
-      class="move-button"
-    >
+    <button class="move-button js-scissor-button">
       <img
         src="rock-paper-scissor emoji/scissors-emoji.png"
         class="move-icon"
@@ -57,10 +42,15 @@
       Reset Score
     </button>
 
-    <button class="auto-play-button" onclick="
+    <button
+      class="auto-play-button"
+      onclick="
      autoplay();
 
-    ">Auto play</button>
+    "
+    >
+      Auto play
+    </button>
 
     <script src="script/12-rock-paper-scissor.js"></script>
   </body>
