@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>advanced function part 2 exercise</title>
+  </head>
+  <body>
+    <script>
+      const multiply = (a, b) => {
+        return a * b;
+      };
+      console.log(multiply(2, 3));
+      console.log(multiply(7, 10));
+
+      function countPositive(nums) {
+        let count = 0;
+        nums.forEach((element) => {
+          if (element > 0) {
+            count += 1;
+          }
+        });
+        console.log(count);
+      }
+      countPositive([1, -3, 5]);
+      countPositive([-2, 3, -5, 7, 10]);
+
+      const countPosit = (nums) => {
+        let count = 0;
+        nums.forEach((element) => {
+          if (element > 0) {
+            count += 1;
+          }
+        });
+        console.log(count);
+      };
+      countPosit([1, -3, 5]);
+      countPosit([-2, 3, -5, 7, 10]);
+
+      function addNum(array, num) {
+        return array.map((value) => value + num);
+      }
+      console.log(addNum([1, 2, 3], 2));
+      console.log(addNum([-2, -1, 0, 99], 2));
+
+      function removeEgg(foods) {
+        let a2 = foods.filter((value) => {
+          return value !== "egg";
+        });
+        console.log(a2);
+      }
+      removeEgg(["egg", "apple", "egg", "egg", "ham"]);
+
+      function removeEggs(foods) {
+        let removedEggs = 0;
+        return foods.filter((value) => {
+          if (value === "egg" && removedEggs < 2) {
+            removedEggs++;  
+            return false;
+          }
+          return true;
+        });
+      }
+     console.log(removeEggs(["egg", "apple", "egg", "egg", "ham"])) ;
+    </script>
+  </body>
+</html>
